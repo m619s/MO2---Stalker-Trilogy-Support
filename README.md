@@ -1,1 +1,1 @@
-# MO2 - Stalker-Trilogy-Support
+# MO2 - Stalker Trilogy Support
