@@ -18,7 +18,7 @@ class StalkerCoP_GogGame(BasicGame):
     GameBinary = "bin/xrEngine.exe"
 
     GameDataPath = ""
-    GameDocumentsDirectory = "%GAME_PATH%/_appdata_gog_"
+    GameDocumentsDirectory = "%GAME_PATH%/_appdata_"
     GameIniFiles= "%GAME_DOCUMENTS%/user.ltx"
     GameSaveExtension = "scop"
     GameSavesDirectory = "%GAME_DOCUMENTS%/savedgames"
@@ -36,7 +36,7 @@ class StalkerCoP_GogGame(BasicGame):
         ]
 
     def mappings(self) -> list[mobase.Mapping]:
-        appdata = self.gameDirectory().filePath("_appdata_gog_")
+        appdata = self.gameDirectory().filePath("_appdata_")
         m = mobase.Mapping()
         m.createTarget = True
         m.isDirectory = True
